@@ -12,7 +12,7 @@ namespace DAL.DataBase
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=DbContacts;Integrated Security=True;");
+            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=DbContactss;Integrated Security=True;");
         }
 
         public DbSet<Contact> Contacts { get; set; }
