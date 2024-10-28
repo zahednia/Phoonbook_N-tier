@@ -44,23 +44,24 @@ namespace UI_winForm.Forms
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 195);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 244);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(442, 406);
+            this.dataGridView1.Size = new System.Drawing.Size(850, 406);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // txtSearchKey
             // 
-            this.txtSearchKey.Location = new System.Drawing.Point(264, 108);
+            this.txtSearchKey.Location = new System.Drawing.Point(671, 112);
             this.txtSearchKey.Name = "txtSearchKey";
-            this.txtSearchKey.Size = new System.Drawing.Size(169, 33);
+            this.txtSearchKey.Size = new System.Drawing.Size(169, 24);
             this.txtSearchKey.TabIndex = 1;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(264, 147);
+            this.btnSearch.Location = new System.Drawing.Point(671, 151);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(169, 33);
             this.btnSearch.TabIndex = 2;
@@ -71,9 +72,9 @@ namespace UI_winForm.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(317, 80);
+            this.label1.Location = new System.Drawing.Point(724, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 26);
+            this.label1.Size = new System.Drawing.Size(66, 18);
             this.label1.TabIndex = 3;
             this.label1.Text = "جستجو کنید";
             // 
@@ -119,9 +120,9 @@ namespace UI_winForm.Forms
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 601);
+            this.ClientSize = new System.Drawing.Size(850, 650);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAddNewContact);
             this.Controls.Add(this.btnDetail);
@@ -130,7 +131,7 @@ namespace UI_winForm.Forms
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearchKey);
             this.Controls.Add(this.dataGridView1);
-            this.Font = new System.Drawing.Font("Sahel", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "frmMain";

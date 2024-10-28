@@ -39,6 +39,7 @@ namespace UI_winForm.Forms
             dataGridView1.Columns[0].HeaderText = "شناسه";
             dataGridView1.Columns[1].HeaderText = "نام";
             dataGridView1.Columns[2].HeaderText = "شماره تلفن";
+            dataGridView1.Columns[3].HeaderText = "مشخصات";
 
             dataGridView1.Columns[1].Width = 200;
             dataGridView1.Columns[2].Width = 200;
@@ -108,6 +109,11 @@ namespace UI_winForm.Forms
             frmEdit frmEdit = new frmEdit(Id);
             frmEdit.ShowDialog();
             frmMain_Load(null, null);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

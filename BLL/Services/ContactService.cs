@@ -27,6 +27,7 @@ namespace BLL.Services
                 FullName = $"{p.Name} {p.LastName}",
                 PhoneNumber = p.PhoneNumber,
                 Id = p.Id,
+                Description = p.Description,
             }).ToList();
             return contacts;
         }
@@ -52,6 +53,8 @@ namespace BLL.Services
                     p.PhoneNumber.Contains(SearchKey)
                     ||
                     p.Company.Contains(SearchKey)
+                    || 
+                    p.Description.Contains(SearchKey)
                     );
 
             }
